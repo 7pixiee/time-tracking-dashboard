@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    --color1: rgb(244, 240, 240);
+    --color2: hsl(226, 43%, 10%);
+    --color3: rgb(152, 154, 206);
+    --color4: hsl(235, 46%, 20%);
+    --color5: hsl(246, 80%, 60%);
+    --color7: rgb(180, 185, 240);
+    --color8: rgb(52, 57, 121);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: var(--color1);
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 65vw;
+    height: 50vh;
+    display: flex;
+    gap: 3%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--color3);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    color: var(--color1);
+}
+
+.container div {
+    border-radius: 15px;
+}
+
+.profile-background {
+    width: 30%;
+    height: 100%;
+    background-color: var(--color4);
+    border-radius: 15px;
+}
+
+.profile {
+    width: 100%;
+    height: 70%;
+    background-color: var(--color5);
+    border-radius: 15px;
+}
+
+.profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: 3px solid var(--color1);
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.profile p {
+    font-size: 0.9rem;
+    color: var(--color7);
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+.timeframes {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 30%;
+    padding-left: 10%;
+}
+
+.activities {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.activity-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.activity {
+    background-color: var(--color4);
+    padding: 13%;
+    width: 100%;
+    height: 83%;
+    line-height: 3%;
+    z-index: 2;
+}
+
+.activity:hover {
+    background-color: var(--color8);
+    cursor: pointer;
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.activity-header .menu-icon {
+    width: 14px;
+    height: 3px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.activity-header img[alt="Menu Icon"]:hover {
+    filter: brightness(0) invert(1);
+
+}
+
+.current {
+    font-size: 3.2rem;
+    margin: 5vh 0;
+}
+
+.previous {
+    font-size: 0.9rem;
+    color: var(--color3);
+    margin-bottom: 0;
+    margin-top: -2%;
+}
+
+.activity-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.icon-work {
+    background-color: rgb(253, 148, 107);
+}
+
+.icon-play {
+    background-color: rgb(96, 183, 242);
+}
+
+.icon-study {
+    background-color: rgb(251, 123, 151);
+}
+
+.icon-exercise {
+    background-color: rgb(94, 198, 162);
+}
+
+.icon-social {
+    background-color: rgb(131, 51, 230);
+}
+
+.icon-self-care {
+    background-color: rgb(255, 212, 102);
+}
+
+.activity-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 85vw;
+    }
+
+    .profile-name {
+        font-size: 2.5rem;
+    }
+
+    .current {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+    }
+
+    .profile-background {
+        width: 100%;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20%;
+        padding-top: 5%;
+
+    }
+
+    .profile-picture {
+        margin-top: -4%;
+
+    }
+
+    .profile-picture:hover {
+        transform: scale(1.5);
+    }
+
+    .timeframes {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        padding-left: 0;
+        margin: 20px 0;
+
+    }
+
+    .activities {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.5rem;
+    }
+
+    .icons {
+        height: 190px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        height: auto;
+        padding: 2rem 0;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .profile-background {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        height: 130px;
+        padding: 25px;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+        margin-left: 8px;
+    }
+
+    .profile-picture {
+        margin: 0;
+    }
+
+    .profile p {
+        margin: 0;
+    }
+
+    .profile-info p {
+        margin-bottom: 5px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .timeframes {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+
+    .activities {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+    }
+
+    .icons {
+        height: 190px;
+    }
+
+    .activity {
+        height: 75%;
+        padding: 5% 7% 7% 7%;
+    }
+    
+    .activity-stats {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+
+    .current {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    .previous {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}

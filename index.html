@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time tracking dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile-background">
+      <div class="profile">
+        <img src="images/profile.png" alt="Profile Picture" class="profile-picture">
+        <div class="profile-info">
+          <p>Report for</p>
+          <h1 class="profile-name">Pixie</h1>
+        </div>
+      </div>
+      <div class="timeframes">
+        <button id="daily">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="activities">
+      <div class="icons icon-work">
+        <img src="images/icon-work.svg" alt="Work Icon" class="activity-icon">
+        <div class="activity work">
+          <div class="activity-header">
+            <h2 class="activity-name">Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">5hrs</p>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons icon-play">
+        <img src="images/icon-play.svg" alt="Play Icon" class="activity-icon">
+        <div class="activity play">
+          <div class="activity-header">
+            <h2 class="activity-name">Play</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">1hr</p>
+            <p class="previous">Previous - 2hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons icon-study">
+        <img src="images/icon-study.svg" alt="Study Icon" class="activity-icon">
+        <div class="activity study">
+          <div class="activity-header">
+            <h2 class="activity-name">Study</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">0hrs</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons icon-exercise">
+        <img src="images/icon-exercise.svg" alt="Exercise Icon" class="activity-icon">
+        <div class="activity exercise">
+          <div class="activity-header">
+            <h2 class="activity-name">Exercise</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">1hr</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons icon-social">
+        <img src="images/icon-social.svg" alt="Social Icon" class="activity-icon">
+        <div class="activity social">
+          <div class="activity-header">
+            <h2 class="activity-name">Social</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">1hr</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+      <div class="icons icon-self-care">
+        <img src="images/icon-self-care.svg" alt="Self Care Icon" class="activity-icon">
+        <div class="activity self-care">
+          <div class="activity-header">
+            <h2 class="activity-name">Self Care</h2>
+            <img src="images/icon-ellipsis.svg" alt="Menu Icon" class="menu-icon">
+          </div>
+          <div class="activity-stats">
+            <p class="current">0hrs</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
